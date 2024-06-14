@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class binary2decimal {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the value for the binary:");
+		String binary = scan.next();
+		int decimal = Integer.parseInt(binary,2);
+		System.out.println("The value for the binary to decimal is "+decimal);
+	
+		
+	}
+
+
+}
