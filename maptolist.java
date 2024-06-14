@@ -1,0 +1,22 @@
+package basic;
+import java.util.*;
+public class maptolist {
+	public static void main(String[] args) {
+		HashMap<Integer,String> map= new HashMap<>();
+		
+		map.put(1,"a");
+		map.put(2, "b");
+		map.put(3, "c");
+		map.put(4, "d");
+		map.put(5, "e");
+		
+		ArrayList<Integer> key =new ArrayList<Integer>(map.keySet());
+		ArrayList<String> value = new ArrayList<String>(map.values());
+		
+		
+		System.out.println(key);
+		System.out.println(value);
+		
+	}
+
+}

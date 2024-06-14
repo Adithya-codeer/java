@@ -1,0 +1,26 @@
+package basic;
+import java.util.Scanner;
+public class octal2decimal {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the octal value to convert into decimal:");
+		int octal = scan.nextInt();
+		int result = oct2dec(octal);
+		System.out.print(result);
+	}
+	
+	public static int oct2dec(int num) {
+		int remainder = 0, i = 0;
+		int octal = 0;
+		while(num != 0) {
+			remainder = num % 10;
+			octal += remainder * Math.pow(8,i);
+			num = num/ 10;
+			i++;
+		
+			
+		}
+		return octal;
+	}
+
+}
