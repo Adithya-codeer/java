@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a value to find it's ascii value: ");
+        String input = scan.nextLine();
+        char variable = input.charAt(0);
+        int ascii = variable;
+        System.out.print("The ascii value of the value '"+input+"' is ("+ ascii+")");
+        
+    }
+}
