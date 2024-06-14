@@ -1,0 +1,21 @@
+package basic;
+import java.util.Scanner;
+
+public class factors {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter a number to find its factors:");
+		int number = scan.nextInt();
+		for(int i=number; i <= Math.abs(number);i++) {
+			if(i==0) {
+				continue;
+			}
+			else {
+				if(number % i==0) {
+					System.out.print(i+" ");
+				}
+			}
+		}
+	}
+
+}

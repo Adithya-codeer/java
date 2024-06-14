@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class solution{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number to find +'ve or -'ve:");
+        double num = scan.nextDouble();
+        
+        if (num > 0){
+            System.out.println("You have entered a positive number");
+        }
+        else if (num < 0){
+            System.out.println("You have entered a negative number");
+        }
+        else{
+            System.out.println("You have entered a zero digit");
+        }
+    }
+}

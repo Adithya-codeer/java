@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to the program were we will find if a given is number is odd or even\n");
+        System.out.print("Enter the value: ");
+        int num = scan.nextInt();
+        
+        if(num % 2 == 0){
+            System.out.println("\nThe value "+num+" is even.");
+        }
+        else{
+            System.out.println("\nThe value "+num+" is odd.");
+        }
+    }
+}

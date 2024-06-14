@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class decimal2binary {
+	public static void main(String[] args) {
+		long binary;
+		Scanner scan= new Scanner(System.in);
+		System.out.print("Enter a number to find its binary value:");
+		int decimal = scan.nextInt();
+		long result = dectobin(decimal);
+		System.out.print("The binary value is "+result);
+	}
+	
+	public static long dectobin(int num) {
+		int remainder = 0;
+		int i = 1;
+		long binary = 0;
+		
+		while(num!=0) {
+			remainder = num % 2;
+			num = num/2;
+			binary += remainder * i;
+			i *= 10;
+			//return binary;
+		}
+		return binary;
+		
+	}
+
+}

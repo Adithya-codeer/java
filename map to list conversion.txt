@@ -1,0 +1,22 @@
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+public class map2list {
+	public static void main(String[] args) {
+		HashMap<Integer,String> map = new HashMap<Integer,String>();
+		
+		map.put(1, "a");
+		map.put(2, "B");
+		map.put(3, "c");
+		map.put(4, "D");
+		map.put(5, "e");
+		
+		List<Integer> key = map.keySet().stream().collect(Collectors.toList());
+		List<String> value= map.values().stream().collect(Collectors.toList());
+		
+		System.out.println(key);
+		System.out.println(value);
+		
+	}
+
+}

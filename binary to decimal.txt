@@ -1,0 +1,26 @@
+package basic;
+import java.util.Scanner;
+
+public class binary2decimal {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter a binary number to find its decimal value:");
+		long num = scan.nextLong();
+		long result = bintodec(num);
+		System.out.println("The decimal value for the binary number "+num+" is "+result);
+	}
+	
+	public static long bintodec(long num) {
+		long decimal =0;
+		long remainder=0;
+		long i =0;
+		while(num != 0) {
+			remainder = num%10;
+			decimal += remainder * Math.pow(2,i);
+			num = num / 10;
+			i++;
+		}
+		return decimal;
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+        System.out.println("Welcome to the program where we will find the largest of three numbers\n");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the value for first integer:");
+        int num1 = scan.nextInt();
+        System.out.print("Enter the value for second integer:");
+        int num2 = scan.nextInt();
+        System.out.print("Enter the value for third integer:");
+        int num3 = scan.nextInt();
+        
+        if (num1 > num2 && num1 > num3){
+            System.out.print("\nThe greatest of three integer is :"+num1);
+        }
+        else if(num2>num1 && num2 > num3){
+            System.out.print("\nThe greatest of three integer is :"+num2);
+        }
+        else {
+            System.out.print("\nThe greatest of three integer is :"+num3);
+        }
+    }
+}

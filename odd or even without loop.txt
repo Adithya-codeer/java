@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to the program were we will find wheather a given number is odd or even:\n");
+        System.out.print("Enter a value: ");
+        int num = scan.nextInt();
+        String oddeven = (num % 2 != 0)?"odd:":"even:";
+        System.out.println("\nThe value "+num+" you entered is "+oddeven);
+    }
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+        System.out.println("Welcome to program were we will find wheather a given alphabet is vowel or constant\n");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the alphabet: ");
+        String alphabet1 = scan.nextLine();
+        char alphabet2 = alphabet1.charAt(0);
+        char alphabet = alphabet2;
+        if (alphabet =='a' || alphabet =='e' || alphabet =='i' || alphabet =='o' || alphabet =='u'){
+            System.out.print("\nThe alphabet "+alphabet1+" you entered is vowel");
+            
+        }
+        else{
+            System.out.print("\nThe alphabet "+alphabet1+" you entered is constant");
+        }
+        
+    }
+}

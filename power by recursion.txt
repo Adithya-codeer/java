@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class powerbase {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the value for base:");
+		int base = scan.nextInt();
+		System.out.print("Enter the value for power:");
+		int power = scan.nextInt();
+		int result = power(base,power);
+		System.out.print(result);
+	}
+	
+	public static int power(int base, int power) {
+		if(power != 0) {
+			return (base*power(base,power-1));
+		}
+		
+		else {
+			return 1;
+		}
+	}
+
+}

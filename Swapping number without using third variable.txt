@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+        System.out.println("Enter the value for swapping:");
+        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the value for number1:");
+        int num1 = scan.nextInt();
+        System.out.print("Enter the value for number2:");
+        int num2 = scan.nextInt();
+        num1 = num1 - num2;
+        num2 = num1 + num2;
+        num1 = num2 - num1;
+        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+        System.out.println("Value after Swapping");
+        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+        System.out.println("Value for number 1 :"+num1);
+        System.out.println("Value for number 2 :"+num2);
+    }
+}

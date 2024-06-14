@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class solution{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to the program where we will find the remainder and quotient!!");
+        System.out.println("____________________________");
+        System.out.print("Enter the value for the dividend: ");
+        double num1 = scan.nextDouble();
+        System.out.print("Enter the value for the divisor: ");
+        double num2 = scan.nextDouble();
+        System.out.println("____________________________");
+        double quotient = num1 / num2;
+        System.out.println("The quotient when '"+num1+"' divided by '"+num2+"' is ("+quotient+")");
+        double remainder = num1 % num2;
+        System.out.print("The remainder when '"+num1+"' divided by '"+num2+"' is ("+remainder+")");
+    }
+}
