@@ -1,0 +1,22 @@
+import java.util.*;
+public class alphabetornot {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter a character to check wheather it is alphaber or not:");
+		String c = scan.nextLine();
+		char alphabet = c.charAt(0);
+		System.out.println("You have entered :"+alphabet);
+		
+		if(alphabet>='A'&& alphabet <='Z'&&alphabet >='a' && alphabet <='z') {
+			System.out.println("It is alphabet");
+		}
+		else {
+			System.out.println("It is not alphabet");
+		}
+		
+
+	}
+
+}
